@@ -31,17 +31,27 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC                     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                              &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB                     &kp Q   &kp W   &kp E   &kp R   &kp T                               &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BACKSLASH
-&kp GRAVE                   &kp A   &kp S   &kp D   &kp F   &kp G                               &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp MINUS
-&mt LSHFT LEFT_PARENTHESIS  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans         &trans       &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RIGHT_PARENTHESIS
-                                            &trans  &trans  &trans  &lt 1 ENTER    &lt 1 SPACE  &trans  &trans  &trans
+&kp ESC                     &kp N1  &kp N2  &kp N3     &kp N4              &kp N5                                              &kp N6                   &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB                     &kp Q   &kp W   &kp E      &kp R               &kp T                                               &kp Y                    &kp U   &kp I      &kp O    &kp P     &kp BACKSLASH
+&kp GRAVE                   &kp A   &kp S   &kp D      &kp F               &kp G                                               &kp H                    &kp J   &kp K      &kp L    &kp SEMI  &kp MINUS
+&mt LSHFT LEFT_PARENTHESIS  &kp Z   &kp X   &kp C      &kp V               &kp B                   &trans         &trans       &kp N                    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RIGHT_PARENTHESIS
+                                            &kp LCTRL  &mt LEFT_ALT ENTER  &mt LEFT_GUI BACKSPACE  &lt 2 ENTER    &lt 2 SPACE  &mt RIGHT_GUI BACKSPACE  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        coding {
+        navsymbols {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        navsymbols_old {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans     &trans                &trans                 &trans             &trans            &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR         &kp CARET         &trans
@@ -49,6 +59,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &arrow  &kp EQUAL  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK       &trans            &trans
                         &trans  &trans  &trans  &trans    &trans  &trans     &trans                &trans
             >;
+
+            label = "Navigation, Media, and Symbols";
         };
 
         misc {
