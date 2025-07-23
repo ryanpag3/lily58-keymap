@@ -43,11 +43,11 @@
 
         navsymbols {
             bindings = <
-&kp TILDE  &trans    &trans    &trans        &trans        &kp HOME                     &trans  &trans    &trans    &trans        &trans     &trans
-&kp GRAVE  &trans    &trans    &trans        &trans        &kp PG_UP                    &trans  &trans    &trans    &trans        &trans     &trans
-&trans     &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT     &kp PG_DN                    &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans     &kp LBKT  &kp RBKT  &kp LS(LBRC)  &kp LS(RBRC)  &kp END    &trans    &trans  &trans  &trans    &trans    &trans        &trans     &trans
-                               &trans        &trans        &trans     &trans    &trans  &trans  &trans    &trans
+&kp TILDE  &trans        &trans    &trans        &trans         &trans                    &trans  &trans        &trans    &trans        &trans         &trans
+&kp GRAVE  &kp LA(LEFT)  &trans    &trans        &kp LA(RIGHT)  &trans                    &trans  &kp LA(LEFT)  &trans    &trans        &kp LA(RIGHT)  &trans
+&trans     &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans                    &trans  &kp LEFT      &kp DOWN  &kp UP_ARROW  &kp RIGHT      &trans
+&trans     &kp LBKT      &kp RBKT  &kp LS(LBRC)  &kp LS(RBRC)   &trans  &trans    &trans  &trans  &trans        &trans    &trans        &trans         &trans
+                                   &trans        &trans         &trans  &trans    &trans  &trans  &trans        &trans
             >;
         };
 
